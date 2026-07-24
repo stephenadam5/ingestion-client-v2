@@ -1,5 +1,7 @@
 # Ingestion Client v2
 
+<img width="1240" height="560" alt="gif1-ingestionv2" src="https://github.com/user-attachments/assets/5a77aeb5-3343-495a-8c36-72eed664022f" />
+
 Drop an audio file into a folder, get a transcript back in another storage account.
 It's an event-driven pipeline on Azure Functions that runs the three current Azure
 Speech engines - fast, batch, and LLM Speech - from a single deployment. The engine is
@@ -102,6 +104,8 @@ Use whatever you already use for blob storage - the Azure portal, Storage Explor
 under `transcriptions/`, mirroring the input path, so `audio-input/fast/call.wav` becomes
 `transcriptions/fast/call.wav.json`. Anything dropped outside the three engine folders
 goes to `quarantine` with a short note explaining why.
+
+<img width="1240" height="560" alt="gif2-ingestionv2" src="https://github.com/user-attachments/assets/53b0ee40-75ea-4b92-b017-36becb0eedbe" />
 
 ## Configuring the engines (optional)
 
