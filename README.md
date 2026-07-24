@@ -10,8 +10,8 @@ picked by the folder you upload to, so there's no redeploy or config switch to c
 This is a Python rewrite of the older [ingestion-client](https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/samples/ingestion/ingestion-client)
 sample, keyless throughout and using the batch API's multi-file jobs.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/stephenadams_microsoft/ingestion-client-v2)
-[![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode%3A%2F%2Fms-vscode-remote.remote-containers%2FcloneInVolume%3Furl%3Dhttps%3A%2F%2Fgithub.com%2Fstephenadams_microsoft%2Fingestion-client-v2)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/stephenadam5/ingestion-client-v2)
+[![Open in Dev Containers](https://img.shields.io/static/v1?style=for-the-badge&label=Dev%20Containers&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode%3A%2F%2Fms-vscode-remote.remote-containers%2FcloneInVolume%3Furl%3Dhttps%3A%2F%2Fgithub.com%2Fstephenadam5%2Fingestion-client-v2)
 
 ## How it works
 
@@ -24,7 +24,7 @@ mirrors the input path under `transcriptions/`. All three engines run side by si
 | `audio-input/batch/` | Batch transcription (async) | Large volumes and long audio      | Diarization, language ID, custom models |
 | `audio-input/llm/`   | LLM Speech                  | Highest quality, custom prompting | Diarization, translation, prompting |
 
-Files uploaded to an unrecognized folder (or the container root) are moved to `quarantine`.
+Files uploaded to an unrecognised folder (or the container root) are moved to `quarantine`.
 
 ## Architecture
 
@@ -86,7 +86,7 @@ provisions everything and publishes the function in one step. The engine config 
 uploaded for you as part of it, so the pipeline is ready to use the moment it finishes.
 
 If the first run stops with an Event Grid error about a managed identity not being
-authorized to deliver to the endpoint, run `azd up` again. Azure occasionally validates
+authorised to deliver to the endpoint, run `azd up` again. Azure occasionally validates
 the event subscription before the role assignment that lets Event Grid write to Service
 Bus has finished propagating. The second run continues from where it left off once that
 permission is live.
