@@ -1,6 +1,6 @@
 # Ingestion Client v2
 
-<img width="1240" height="560" alt="gif1-ingestionv2" src="https://github.com/user-attachments/assets/5a77aeb5-3343-495a-8c36-72eed664022f" />
+<img width="1240" height="560" alt="gif1-ingestionv2" src="https://github.com/user-attachments/assets/e9ecb94f-7ffc-492a-8139-a2103c7eccba" />
 
 Drop an audio file into a folder, get a transcript back in another storage account.
 It's an event-driven pipeline on Azure Functions that runs the three current Azure
@@ -105,7 +105,7 @@ under `transcriptions/`, mirroring the input path, so `audio-input/fast/call.wav
 `transcriptions/fast/call.wav.json`. Anything dropped outside the three engine folders
 goes to `quarantine` with a short note explaining why.
 
-<img width="1240" height="560" alt="gif2-ingestionv2" src="https://github.com/user-attachments/assets/53b0ee40-75ea-4b92-b017-36becb0eedbe" />
+<img width="1240" height="560" alt="gif2-ingestionv2" src="https://github.com/user-attachments/assets/3f489f46-b578-40fc-824e-a86d3f24e05f" />
 
 ## Configuring the engines (optional)
 
